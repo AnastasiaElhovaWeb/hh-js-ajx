@@ -40,7 +40,6 @@ window.addEventListener('storage', () => {
     let arrMovies = JSON.parse(movies);
     for (let i = arrMovies.length - 3; i < arrMovies.length; i++) {
         let movie = arrMovies[i];
-        console.log(movie);
         addLast(movie.id, movie.original_title);
     }
 });
